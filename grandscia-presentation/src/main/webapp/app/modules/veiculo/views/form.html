@@ -1,0 +1,114 @@
+<form name="VeiculoForm" gumga-form novalidate>
+		
+	<div gumga-form-class="renavam">
+		<label gumga-translate-tag="veiculo.renavam">renavam</label>
+		<input gumga-error type="text" name="renavam" ng-model="veiculo.data.renavam"  class="form-control" />
+	</div>		
+	<div gumga-form-class="placa">
+		<label gumga-translate-tag="veiculo.placa">placa</label>
+		<input gumga-error type="text" name="placa" ng-model="veiculo.data.placa"  class="form-control" />
+	</div>		
+	<div gumga-form-class="anofabricado">
+		<label gumga-translate-tag="veiculo.anofabricado">anofabricado</label>
+		<input gumga-error type="text" name="anofabricado" ng-model="veiculo.data.anofabricado"  class="form-control" />
+	</div>		
+	<div gumga-form-class="anomodelo">
+		<label gumga-translate-tag="veiculo.anomodelo">anomodelo</label>
+		<input gumga-error type="text" name="anomodelo" ng-model="veiculo.data.anomodelo"  class="form-control" />
+	</div>		
+	<div gumga-form-class="cor">
+		<label gumga-translate-tag="veiculo.cor">cor</label>
+		<input gumga-error type="text" name="cor" ng-model="veiculo.data.cor"  class="form-control" />
+	</div>		
+	<div gumga-form-class="restricao">
+		<label gumga-translate-tag="veiculo.restricao">restricao</label>
+		<input gumga-error type="text" name="restricao" ng-model="veiculo.data.restricao"  class="form-control" />
+	</div>		
+	<div gumga-form-class="situacao">
+		<label gumga-translate-tag="veiculo.situacao">situacao</label>
+		<input gumga-error type="text" name="situacao" ng-model="veiculo.data.situacao"  class="form-control" />
+	</div>		
+
+	<div gumga-form-class="proprietario">
+		<label gumga-translate-tag="veiculo.proprietario">proprietario</label>
+	    <gumga-many-to-one
+	            name="proprietario"
+	            value="veiculo.data.proprietario"
+	            search-method="proprietario.methods.asyncSearch('nome', param)"
+	            field="nome"
+	            authorize-add="false"
+              display-info="false"
+	            post-method="proprietario.methods.asyncPost(value, 'nome')">
+	    </gumga-many-to-one>
+	</div>
+
+		
+
+	<div gumga-form-class="marcamodelo">
+		<label gumga-translate-tag="veiculo.marcamodelo">marcamodelo</label>
+	    <gumga-many-to-one
+	            name="marcamodelo"
+	            value="veiculo.data.marcamodelo"
+	            search-method="marcamodelo.methods.asyncSearch('nome', param)"
+	            field="nome"
+	            authorize-add="false"
+              display-info="false"
+	            post-method="marcamodelo.methods.asyncPost(value, 'nome')">
+	    </gumga-many-to-one>
+	</div>
+
+		
+
+	<div gumga-form-class="categoria">
+		<label gumga-translate-tag="veiculo.categoria">categoria</label>
+	    <gumga-many-to-one
+	            name="categoria"
+	            value="veiculo.data.categoria"
+	            search-method="categoria.methods.asyncSearch('nome', param)"
+	            field="nome"
+	            authorize-add="false"
+              display-info="false"
+	            post-method="categoria.methods.asyncPost(value, 'nome')">
+	    </gumga-many-to-one>
+	</div>
+
+		
+
+	<div gumga-form-class="especie">
+		<label gumga-translate-tag="veiculo.especie">especie</label>
+	    <gumga-many-to-one
+	            name="especie"
+	            value="veiculo.data.especie"
+	            search-method="especie.methods.asyncSearch('nome', param)"
+	            field="nome"
+	            authorize-add="false"
+              display-info="false"
+	            post-method="especie.methods.asyncPost(value, 'nome')">
+	    </gumga-many-to-one>
+	</div>
+
+		
+
+	<div gumga-form-class="combustivel">
+		<label gumga-translate-tag="veiculo.combustivel">combustivel</label>
+	    <gumga-many-to-one
+	            name="combustivel"
+	            value="veiculo.data.combustivel"
+	            search-method="combustivel.methods.asyncSearch('nome', param)"
+	            field="nome"
+	            authorize-add="false"
+              display-info="false"
+	            post-method="combustivel.methods.asyncPost(value, 'nome')">
+	    </gumga-many-to-one>
+	</div>
+
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="veiculo.list"
+            submit="veiculo.methods.put(veiculo.data)"
+            position="right"
+            valid="VeiculoForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

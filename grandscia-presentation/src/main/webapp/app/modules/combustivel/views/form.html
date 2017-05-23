@@ -1,0 +1,15 @@
+<form name="CombustivelForm" gumga-form novalidate>
+		
+	<div gumga-form-class="nome">
+		<label gumga-translate-tag="combustivel.nome">nome</label>
+		<input gumga-error type="text" name="nome" ng-model="combustivel.data.nome"  class="form-control" />
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="combustivel.list"
+            submit="combustivel.methods.put(combustivel.data)"
+            position="right"
+            valid="CombustivelForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

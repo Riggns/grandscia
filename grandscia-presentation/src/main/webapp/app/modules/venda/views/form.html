@@ -1,0 +1,27 @@
+<form name="VendaForm" gumga-form novalidate>
+		
+	<div gumga-form-class="cliente">
+		<label gumga-translate-tag="venda.cliente">cliente</label>
+		<input gumga-error type="text" name="cliente" ng-model="venda.data.cliente"  class="form-control" />
+	</div>		
+
+	<div class="full-width-without-padding">
+	    <label for="itens" gumga-translate-tag="venda.itens"></label>
+	
+		<gumga-one-to-many
+		        children="venda.data.itens"
+		        template-url="app/modules/venda/views/modalItemVenda.html"
+		        displayable-property="data"
+		        controller="ModalItemVendaController">
+		</gumga-one-to-many>
+	</div>
+    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="venda.list"
+            submit="venda.methods.put(venda.data)"
+            position="right"
+            valid="VendaForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

@@ -1,0 +1,14 @@
+[
+    "CRUD-BASE",
+    "CUSTOMFIELDS",
+    "TAGS",
+    "CONFIGURATION"
+            , "CRUD-Proprietario"
+            , "CRUD-MarcaModelo"
+            , "CRUD-Categoria"
+            , "CRUD-Especie"
+            , "CRUD-Combustivel"
+            , "CRUD-Acessorios"
+            , "CRUD-Veiculo"
+            , "CRUD-Venda"
+]

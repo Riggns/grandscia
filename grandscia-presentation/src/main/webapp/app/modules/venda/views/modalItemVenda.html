@@ -1,0 +1,42 @@
+	<form name="Modal">
+	    <div class="modal-header">
+	        <h3 class="modal-title" gumga-translate-tag="itemvenda.title"></h3>
+	    </div>
+	    <div class="modal-body" style="overflow: auto">
+		
+	<div gumga-form-class="data">
+		<label gumga-translate-tag="venda.data">data</label>
+		<p class="input-group">
+			<input type="text" name="data" class="form-control"  uib-datepicker-popup="dd/MM/yyyy" ng-model="venda.data.data" is-open="openedData" ng-click="openedData = !openedData" close-text="Close" />
+			<span class="input-group-btn">
+				<button type="button" class="btn btn-default" ng-click="opendata()">
+					<i class="glyphicon glyphicon-calendar"></i>
+				</button>
+			</span>
+		</p>
+	</div>		
+	<div gumga-form-class="quantidade">
+		<label gumga-translate-tag="venda.quantidade">quantidade</label>
+		<input gumga-error type="text" name="quantidade" ng-model="venda.data.quantidade"  class="form-control" />
+	</div>		
+
+	<div gumga-form-class="veiculo">
+		<label gumga-translate-tag="venda.veiculo">veiculo</label>
+	    <gumga-many-to-one
+	            name="veiculo"
+	            value="venda.data.veiculo"
+	            search-method="veiculo.methods.asyncSearch('renavam', param)"
+	            field="renavam"
+	            authorize-add="false"
+              display-info="false"
+	            post-method="veiculo.methods.asyncPost(value, 'renavam')">
+	    </gumga-many-to-one>
+	</div>
+
+	    </div>
+	    <div class="clearfix"></div>
+	    <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" ng-click="ok(venda.data)" ng-disabled="Modal.$invalid">OK</button>
+	        <button type="button" class="btn btn-warning" ng-click="cancel()">Cancel</button>
+	    </div>
+	</form>

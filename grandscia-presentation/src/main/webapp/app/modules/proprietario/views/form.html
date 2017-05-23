@@ -1,0 +1,19 @@
+<form name="ProprietarioForm" gumga-form novalidate>
+		
+	<div gumga-form-class="nome">
+		<label gumga-translate-tag="proprietario.nome">nome</label>
+		<input gumga-error type="text" name="nome" ng-model="proprietario.data.nome"  class="form-control" />
+	</div>		
+	<div gumga-form-class="cpf">
+		<label gumga-translate-tag="proprietario.cpf">cpf</label>
+		<input gumga-error type="text" name="cpf" ng-model="proprietario.data.cpf"  class="form-control" />
+	</div>    <gumga-errors label="Lista de erros" title="Lista de erros"></gumga-errors>
+    <gumga-form-buttons
+            back="proprietario.list"
+            submit="proprietario.methods.put(proprietario.data)"
+            position="right"
+            valid="ProprietarioForm.$valid"
+            confirm-dirty="true"
+            continue="continue">
+    </gumga-form-buttons>    
+</form>

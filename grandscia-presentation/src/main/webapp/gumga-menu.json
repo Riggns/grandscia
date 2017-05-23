@@ -1,0 +1,183 @@
+[
+    {
+        "type": "item",
+        "label": "Venda",
+        "key": "CRUD-Venda",
+        "children": [
+            {
+                "type": "item",
+                "label": "Inserir",
+                "key": "CRUD-Venda",
+                "state": "venda.insert"
+            },
+            {
+                "type": "item",
+                "label": "Listagem",
+                "key": "CRUD-Venda",
+                "state": "venda.list"
+            }            
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Veiculo",
+        "key": "CRUD-Veiculo",
+        "children": [
+            {
+                "type": "item",
+                "label": "Inserir",
+                "key": "CRUD-Veiculo",
+                "state": "veiculo.insert"                
+            },
+            {
+                "type": "item",
+                "label": "Listagem",
+                "key": "CRUD-Veiculo",
+                "state": "veiculo.list"
+            } 
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Acessórios",
+        "key": "CRUD-Acessorios",
+        "children": [
+            {
+                "type": "item",
+                "label": "Inserir",
+                "key": "CRUD-Acessorios",
+                "state": "acessorios.insert" 
+            },
+            {
+                "type": "item",
+                "label": "Listagem",
+                "key": "CRUD-Acessorios",
+                "state": "acessorios.list"
+            } 
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Combustível",
+        "key": "CRUD-Combustivel",
+        "children": [
+            {
+                "type": "item",
+                "label": "Inserir",
+                "key": "CRUD-Combustivel",
+                "state": "combustivel.insert" 
+            },
+            {
+                "type": "item",
+                "label": "Listagem",
+                "key": "CRUD-Combustivel",
+                "state": "combustivel.list"
+            } 
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Espécie",
+        "key": "CRUD-Especie",
+        "children": [
+            {
+                "type": "item",
+                "label": "Inserir",
+                "key": "CRUD-Especie",
+                "state": "especie.insert" 
+            },
+            {
+                "type": "item",
+                "label": "Listagem",
+                "key": "CRUD-Especie",
+                "state": "especie.list"
+            } 
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Categoria",
+        "key": "CRUD-Categoria",
+        "children": [
+            {
+                "type": "item",
+                "label": "Inserir",
+                "key": "CRUD-Categoria",
+                "state": "categoria.insert" 
+            },
+            {
+                "type": "item",
+                "label": "Listagem",
+                "key": "CRUD-Categoria",
+                "state": "categoria.list"
+            } 
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Marca/Modelo",
+        "key": "CRUD-MarcaModelo",
+        "children": [
+            {
+                "type": "item",
+                "label": "Inserir",
+                "key": "CRUD-MarcaModelo",
+                "state": "marcamodelo.insert" 
+            },
+            {
+                "type": "item",
+                "label": "Listagem",
+                "key": "CRUD-MarcaModelo",
+                "state": "marcamodelo.list"
+            } 
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Proprietário",
+        "key": "CRUD-Proprietario",
+        "children": [
+            {
+                "type": "item",
+                "label": "Inserir",
+                "key": "CRUD-Proprietario",
+                "state": "proprietario.insert" 
+            },
+            {
+                "type": "item",
+                "label": "Listagem",
+                "key": "CRUD-Proprietario",
+                "state": "proprietario.list"
+            } 
+        ]
+    },
+    {
+        "type": "item",
+        "label": "Welcome",
+        "state": "welcome",
+        "icon": "home",
+        "key": "CRUD-BASE"
+    },
+    {
+        "type": "item",
+        "label": "Configurations",
+        "icon": "settings",
+        "key": "CONFIGURATION",
+        "children": [
+            {
+                "type": "item",
+                "label": "Custom Fields",
+                "key": "CUSTOMFIELDS",
+                "state": "gumgacustomfield.list",
+                "icon": "text_fields"
+            },
+            {
+                "type": "item",
+                "label": "Tags",
+                "key": "TAGS",
+                "state": "gumgatagdefinition.list",
+                "icon": "label"
+            }
+        ]
+    }
+]

@@ -1,0 +1,39 @@
+	<div class="row">
+	
+	    <div class="col-md-5">
+	      <a ui-sref="marcamodelo.insert" class="btn btn-primary">
+	        <i class="glyphicon glyphicon-plus"></i>Novo
+	      </a>
+	
+	      <button type="button" class="btn btn-danger" ng-click="marcamodelo.methods.delete(selectedValues)" gumga-confirm="Deseja remover?">
+	        <i class="glyphicon glyphicon-trash"></i>Remover
+	      </button>
+	    </div>
+	
+	    <div class="col-md-7">
+	        <gumga-query search="marcamodelo.methods.search(field,param)" advanced-search="marcamodelo.methods.advancedSearch(param)" saved-filters="marcamodelo.methods.getQuery(page)">
+	            <search-field label="nome" field="nome"></search-field>
+	            <advanced-search-field  type="string"  label="nome" field="nome"></advanced-search-field>
+	        </gumga-query>
+	    </div>
+	</div>
+	
+	<div class="full-width-without-padding">
+	    <gumga-list sort="marcamodelo.methods.sort(field, dir)"
+	           class="table-striped table-condensed"
+	            data="marcamodelo.data"
+	            configuration="tableConfig">
+	    </gumga-list>
+	</div>
+
+	<uib-pagination ng-model="page"
+	            max-size="10"
+	            boundary-links="true"
+	            previous-text="‹"
+	            next-Text="›"
+	            first-text="«"
+	            last-text="»"
+	            items-per-page="marcamodelo.pageSize"
+	            total-items="marcamodelo.count"
+	            ng-change="marcamodelo.methods.get(page)">
+	</uib-pagination>

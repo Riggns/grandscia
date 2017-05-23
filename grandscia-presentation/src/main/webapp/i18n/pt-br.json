@@ -1,0 +1,161 @@
+{
+  "coisa": {
+  "title": "Coisa"
+  ,"menulabel": "Coisa "
+  ,"id": "Identificador"
+  ,"descricao": "Descrição"
+  ,"valor": "Valor"
+  ,"ativo": "Ativo"
+  ,"new": "Novo"
+  ,"base": "Coisa"
+  ,"list": "Listar Coisa"
+  ,"edit": "Editar Coisa"
+  ,"insert": "Inserir Coisa"
+  }
+    ,"proprietario":{
+        "title":"Proprietario"
+        ,"menulabel": "Proprietario"
+        ,"edit": "Editar Proprietario"
+        ,"insert": "Inserir Proprietario"
+        ,"list": "Consulta Proprietario"
+        ,"id": "id"
+        ,"nome":"Nome"
+        ,"cpf":"Cpf"
+    }
+
+    ,"marcamodelo":{
+        "title":"MarcaModelo"
+        ,"menulabel": "MarcaModelo"
+        ,"edit": "Editar MarcaModelo"
+        ,"insert": "Inserir MarcaModelo"
+        ,"list": "Consulta MarcaModelo"
+        ,"id": "id"
+        ,"nome":"Nome"
+    }
+
+    ,"categoria":{
+        "title":"Categoria"
+        ,"menulabel": "Categoria"
+        ,"edit": "Editar Categoria"
+        ,"insert": "Inserir Categoria"
+        ,"list": "Consulta Categoria"
+        ,"id": "id"
+        ,"nome":"Nome"
+    }
+
+    ,"especie":{
+        "title":"Especie"
+        ,"menulabel": "Especie"
+        ,"edit": "Editar Especie"
+        ,"insert": "Inserir Especie"
+        ,"list": "Consulta Especie"
+        ,"id": "id"
+        ,"nome":"Nome"
+    }
+
+    ,"combustivel":{
+        "title":"Combustivel"
+        ,"menulabel": "Combustivel"
+        ,"edit": "Editar Combustivel"
+        ,"insert": "Inserir Combustivel"
+        ,"list": "Consulta Combustivel"
+        ,"id": "id"
+        ,"nome":"Nome"
+    }
+
+    ,"acessorios":{
+        "title":"Acessórios"
+        ,"menulabel": "Acessorios"
+        ,"edit": "Editar Acessorios"
+        ,"insert": "Inserir Acessorios"
+        ,"list": "Consulta Acessorios"
+        ,"id": "id"
+        ,"nome":"Nome"
+        ,"veiculo":"Veiculo"
+    }
+
+    ,"veiculo":{
+        "title":"Veiculo"
+        ,"menulabel": "Veiculo"
+        ,"edit": "Editar Veiculo"
+        ,"insert": "Inserir Veiculo"
+        ,"list": "Consulta Veiculo"
+        ,"id": "id"
+        ,"renavam":"Renavam"
+        ,"placa":"Placa"
+        ,"anofabricado":"Anofabricado"
+        ,"anomodelo":"Anomodelo"
+        ,"cor":"Cor"
+        ,"restricao":"Restricao"
+        ,"situacao":"Situacao"
+        ,"proprietario":"Proprietario"
+        ,"marcamodelo":"Marcamodelo"
+        ,"categoria":"Categoria"
+        ,"especie":"Especie"
+        ,"combustivel":"Combustivel"
+    }
+
+    ,"venda":{
+        "title":"Venda"
+        ,"menulabel": "Venda"
+        ,"edit": "Editar Venda"
+        ,"insert": "Inserir Venda"
+        ,"list": "Consulta Venda"
+        ,"id": "id"
+        ,"cliente":"Cliente"
+        ,"itens":"Itens"
+    }
+
+,"address": {
+  "cep": "CEP"
+,"numero": "Número"
+,"bairro":"Bairro"
+,"uf":"Estado"
+,"pais": "País"
+,"complemento": "Complemento"
+,"logradouro": "Logradouro"
+,"tipologradouro": "Tipo de Logradouro"
+,"localidade": "Localização"
+}
+,"formbuttons": {
+  "inserir": "Continuar inserindo"
+}
+,"table": {
+  "select": "Selecionar Todos",
+  "clean": "Limpar pesquisa"
+}
+, "advanced": {
+  "gt": "maior que"
+,"ge": "maior igual"
+,"lt": "menor que"
+,"le": "menor igual"
+,"eq": "igual "
+,"ne": "diferente de"
+,"in": "faz parte de"
+,"not_in": "não faz parte de"
+,"contains": "contém"
+,"starts_with": "começa com"
+,"ends_with": "termina com"
+,"not_contains": "não contém"
+},
+  "general":{
+    "coisa": "Coisa Base",
+    "forgot": "Esqueceu sua Senha?"
+  },
+  "welcome":{
+     "menulabel": "Welcome"
+   },
+   "home": {
+  "menulabel": "Início"
+},
+"gumgatagdefinition":{
+    "name":"Nome"
+    ,"menuLabel": "Tags"
+},
+"configuration": {
+  "menulabel": "Configurações",
+  "gumgatagdefinition": "Tags",
+  "gumgacustomfield": "Atributos Genéricos"
+}
+
+}
