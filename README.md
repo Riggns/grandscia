@@ -1,10 +1,6 @@
-# grandscia
-Novo projeto para documentação e apresentação para o Desenvolvimento Grands Cianorte
 
 # Gerando uma aplicação no GumgaFramework
 
-
-## Documentação
 
 ###### Documentação completa do framework
 
@@ -34,7 +30,7 @@ E também no GitHub https://github.com/GUMGA/frameworkbackend
 
 [NodeJs](https://nodejs.org/en/download/)
 
-###### Bower
+##### Bower
 npm install -g bower
 
 # BACKEND
@@ -51,7 +47,6 @@ mvn archetype:generate
     -DartifactId=grandscia 
     -Dversion=1.0.0
 ```
-
 ![mvn](https://github.com/Riggns/grandscia/blob/master/img/mvn%20criar.JPG)
 
 O comando irá criar o projeto especificado em “-DartifactId” no exemplo será “grandscia”
@@ -71,6 +66,7 @@ Após o término da construção com a mensagem **BUILD SUCCES** alterar no arqu
 ![construir](https://github.com/Riggns/grandscia/blob/master/img/Limpar%20e%20construir.JPG)
 
 ## Arquivo de configuração properties
+
 Ao final de um novo **BUILD SUCCES** entrar no diretório do projeto criado **“E:\Gumga\grandscia”** e localizar o arquivo **“grandscia.properties”**, esse arquivo contém as configurações de acesso a banco e também acesso ao security que é a parte de login da Gumga.
 
 Nesse exemplo foi utilizado o banco de dados MySql, descomentar o Driver referente. 
@@ -96,11 +92,12 @@ Deve-se seguir uma sequência de comandos para gerar a aplicação, exemplo de c
 ```
 IMPORTANTE: Para cada passo a ser realizado deve-se selecionar o item que foi gerado, exemplo: grandscia-domain e clicar no botão para limpar e construir, assim ele gera as dependências para os outros itens.
 ```
+
 ### Como gerar?
+
 Basta acessar cada pasta pelo prompt de comando copiar os códigos abaixo listado para cada item e colar no prompt, irá assim gerar as classes, bastando apenas acompanhar. 
 
-1. **Gerando o domain que é responsável pelas classes que irão criar as tabelas no banco de dados.**
-
+**Gerando o domain que é responsável pelas classes que irão criar as tabelas no banco de dados.**
 ```
 cd grandscia-domain/
 mvn io.gumga:gumgag:entidade -Dentidade=br.com.gdsdev.grandscia.domain.model.Proprietario -Datributos="nome:String,cpf:String"
@@ -117,8 +114,7 @@ mvn io.gumga:gumgag:entidade -Dentidade=br.com.gdsdev.grandscia.domain.model.Ite
 
 **Limpar e construir**
 
-2.	**Executar os comandos para gerar a aplicação, essa parte irá criar os services e os repositorys, o service é responsável pela camada de negócio.**
-
+**Executar os comandos para gerar a aplicação, essa parte irá criar os services e os repositorys, o service é responsável pela camada de negócio.**
 ```
 cd ..
 cd grandscia-application/
@@ -144,7 +140,7 @@ Onde está definido como **“br.com.gdsdev”** tem que ficar igual ao do proje
 
 **Limpar e construir**
 
-3.	**Executar os comandos que geram a API.**
+**Executar os comandos que geram a API.**
 ```
 cd ..
 cd grandscia-api/
@@ -162,7 +158,7 @@ mvn io.gumga:gumgag:api -Dentidade=br.com.gdsdev.grandscia.domain.model.ItemVend
 
 **Limpar e construir**
 
-4.	**Por fim executa-se os comandos para criar a apresentação ou a interface com o usuário.**
+**Por fim executa-se os comandos para criar a apresentação ou a interface com o usuário.**
 ```
 cd ..
 cd grandscia-presentation/
@@ -180,6 +176,7 @@ mvn io.gumga:gumgag:apresentacao -Dentidade=br.com.gdsdev.grandscia.domain.model
 **Limpar e construir**
 
 **No final de cada comando executado deve aparecer a seguinte mensagem:**
+
 ![BUILD](https://github.com/Riggns/grandscia/blob/master/img/buildfim.jpg)
 
 **Tudo OK!**
@@ -196,6 +193,7 @@ Para compilar basta selecionar “grandscia-api” e apertar o botão de compila
 OBS: Para compilar será sempre esse procedimento, não será diferente disso.
 Para acessar a API basta seguir o exemplo, digitando em qualquer navegador.
 ```
+
 http://localhost:8084/grandscia-api/api/veiculo
 
 ![API](https://github.com/Riggns/grandscia/blob/master/img/veiculoapi.JPG)
@@ -215,7 +213,6 @@ Feito isso em “grandscia-application”.
 Para adicionar novos campos segue o exemplo do model Proprietario, os campos são referentes ao GumgaAdress.
 
 ![adress](https://github.com/Riggns/grandscia/blob/master/img/adress.JPG)
-
 
 Com o botão direito no final da classe adicionar os Getters e Setters:
 
