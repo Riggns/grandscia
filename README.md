@@ -221,7 +221,7 @@ Com o botão direito no final da classe adicionar os Getters e Setters:
 
 ![GetterAndSetters](https://github.com/Riggns/grandscia/blob/master/img/getters.JPG)
 
-![GetterAndSetters](https://github.com/Riggns/grandscia/blob/master/img/gs.jpg)
+![GetterAndSetters](https://github.com/Riggns/grandscia/blob/master/img/addgs.jpg)
 
 ![GetterAndSetters](https://github.com/Riggns/grandscia/blob/master/img/addgetters.JPG)
 
