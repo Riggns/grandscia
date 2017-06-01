@@ -236,6 +236,14 @@ O arquivo fica em “grandscia-infraestructure->WebConfig.java”, a linha regis
 
 **Limpar e construir**
 
+## Criando novas rotas
+
+É possível criar além das rotas que o Framework cria por padrão, novas rotas personalizadas, exemplo: uma rota que retorne apenas a informação do Proprietário do veículo e se ele está vendido ou não.
+
+![Nova rota](https://github.com/Riggns/grandscia/blob/master/img/novarota.png)this.restricao
+
+**Limpar e construir**
+
 # FRONTEND
 
 Alterando o arquivo apiLocations.js para poder acessar o frontend de servidor externo ao NetBeans.
@@ -248,6 +256,23 @@ Para instalar execute o comando: npm install http-server -g
 Para executar o servidor: http-server
 
 ![http-server](https://github.com/Riggns/grandscia/blob/master/img/http-server.JPG)
+
+
+## Acessando a aplicação
+
+http://localhost:8080/#/welcome/home
+
+![App](https://github.com/Riggns/grandscia/blob/master/img/app.png)
+
+## Alterando arquivo pt-br.json
+
+O arquivo é reponsável por fazer a tradução da aplicação (label, menu, title, etc,...)
+
+Exemplo: no arquivo de listagem de Espécies temos a tag "gumga-translate-tag" quando passado o objeto da janela "especie.title" a aplicação irá automaticamente fazer a tradução.
+
+![Especie](https://github.com/Riggns/grandscia/blob/master/img/especietitle.png)
+
+![Especie](https://github.com/Riggns/grandscia/blob/master/img/especiecode.png)
 
 
 
