@@ -238,11 +238,13 @@ O arquivo fica em “grandscia-infraestructure->WebConfig.java”, a linha regis
 
 ## Criando novas rotas
 
-É possível criar além das rotas que o Framework cria por padrão, novas rotas personalizadas, exemplo: uma rota que retorne apenas a informação do Proprietário do veículo e se ele está vendido ou não.
+É possível criar além das rotas que o Framework cria por padrão, novas rotas personalizadas, exemplo: uma rota que retorne apenas a informação do Proprietário do veículo e se ele foi vendido ou não, o nome da rota será **mapa**.
 
-![Nova rota](https://github.com/Riggns/grandscia/blob/master/img/novarota.png)this.restricao
+![Nova rota](https://github.com/Riggns/grandscia/blob/master/img/novarota.png)
 
 **Limpar e construir**
+
+Após compilado acessar normalmente a api http://localhost:8084/grandscia-api/api/veiculo/mapa
 
 # FRONTEND
 
@@ -273,6 +275,10 @@ Exemplo: no arquivo de listagem de Espécies temos a tag "gumga-translate-tag" q
 ![Especie](https://github.com/Riggns/grandscia/blob/master/img/especietitle.png)
 
 ![Especie](https://github.com/Riggns/grandscia/blob/master/img/especiecode.png)
+
+## Diretiva gumgaAddress
+
+
 
 
 
